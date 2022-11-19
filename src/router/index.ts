@@ -22,7 +22,63 @@ const routes: Array<RouteRecordRaw> = [
     name: 'DataBindingStringView',
     component: () =>
       import(
-        /* webpackChunkName: "DataBindingStringView",webpackPrefetch:true */ '../views/1_databinding/DataBindingStringView.vue'
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingStringView.vue'
+      )
+  },
+  {
+    path: '/databinding/html',
+    name: 'DataBindingHtmlView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingHtmlView.vue'
+      )
+  },
+  {
+    path: '/databinding/input',
+    name: 'DataBindingInputView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingInputView.vue'
+      )
+  },
+  {
+    path: '/databinding/select',
+    name: 'DataBindingSelectView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingSelectView.vue'
+      )
+  },
+  {
+    path: '/databinding/check',
+    name: 'DataBindingCheckView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingCheckboxView.vue'
+      )
+  },
+  {
+    path: '/databinding/radio',
+    name: 'DataBindingRadioView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingRadioView.vue'
+      )
+  },
+  {
+    path: '/databinding/attr',
+    name: 'DataBindingAttrbuteView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingAttributeView.vue'
+      )
+  },
+  {
+    path: '/databinding/list',
+    name: 'DataBindingListView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding",webpackPrefetch:true */ '../views/1_databinding/DataBindingListView.vue'
       )
   }
 ]
