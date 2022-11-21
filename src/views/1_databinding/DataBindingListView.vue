@@ -7,8 +7,29 @@
         </option>
       </select>
     </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>제품번호</th>
+            <th>제품명</th>
+            <th>가격</th>
+            <th>주문수량</th>
+            <th>합계</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr :key="drink.drinkId" v-for="drink in drinkList">
+            <td>{{ drink.drinkId }}</td>
+            <td>{{ drink.drinkName }}</td>
+            <td>{{ drink.price }}</td>
+            <td><input type="number" name="" id="" v-model="drink.qty" /></td>
+            <td>{{ drink.qty * drink.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  //2:57
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
